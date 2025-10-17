@@ -1,6 +1,6 @@
 # Strands & AWS Bedrock AgentCore example
 
-This repo is an example repo used in the blog: <url>
+This repo is an example repo used in the blog: https://blog.elva-group.com/lets-build-an-agent-on-aws
 
 ## Requirements
 
