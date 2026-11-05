@@ -1,4 +1,8 @@
 FROM public.ecr.aws/docker/library/python:3.13.18-slim
+# The base image predates Debian's apt 3.0.4 (CVE-2026-109518).
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends --only-upgrade apt \
+    && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 
 
